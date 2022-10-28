@@ -113,7 +113,7 @@
         android:layout_marginStart="@dimen/margin_normal"
         android:layout_marginTop="@dimen/margin_normal"
         android:buttonTint="?attr/colorOnPrimary"
-        android:checked="true"
+        android:checked="false"
         android:textColor="?attr/colorOnPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilo_password" />
