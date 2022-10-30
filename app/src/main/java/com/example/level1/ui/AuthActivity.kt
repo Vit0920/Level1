@@ -1,4 +1,4 @@
-package com.example.level1
+package com.example.level1.ui
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -6,8 +6,10 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import androidx.appcompat.app.AppCompatActivity
+import com.example.level1.R
 import com.example.level1.databinding.ActivityAuthBinding
-import java.util.*
+import com.example.level1.utils.Constants
+import com.example.level1.utils.Parser
 import java.util.regex.Pattern
 
 class AuthActivity : AppCompatActivity(){
@@ -40,7 +42,7 @@ class AuthActivity : AppCompatActivity(){
             if (noInputErrors()) {
                 processSharedPreferences()
                 val intent = Intent(this@AuthActivity, MainActivity::class.java)
-                intent.putExtra(Constants.USER_NAME, parseEmail(binding.tietEmail.text.toString()))
+                intent.putExtra(Constants.USER_NAME, Parser.parseEmail(binding.tietEmail.text.toString()))
                 startActivity(intent)
             }
         }
@@ -80,6 +82,7 @@ class AuthActivity : AppCompatActivity(){
         }
     }
 
+
     /*Controls the process of password input. Displays errors in case the password doesn't meet
        certain criteria*/
     private fun controlPasswordInput() {
@@ -109,16 +112,4 @@ class AuthActivity : AppCompatActivity(){
         })
     }
 
-    //Parses the e-mail into user name
-    private fun parseEmail(eMail: String): String {
-        val userNameArr = eMail.substringBefore('@').split(".")
-        var userName = ""
-        for (part in userNameArr) {
-            userName += part.replaceFirstChar {
-                if (it.isLowerCase()) it.titlecase(Locale.ROOT)
-                else it.toString()
-            } + " "
-        }
-        return userName.trim()
-    }
 }

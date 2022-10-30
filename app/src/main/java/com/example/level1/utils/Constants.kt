@@ -1,4 +1,4 @@
-package com.example.level1
+package com.example.level1.utils
 
 object Constants {
     const val PASS = "password"

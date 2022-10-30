@@ -1,7 +1,8 @@
-package com.example.level1
+package com.example.level1.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.level1.utils.Constants
 import com.example.level1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
