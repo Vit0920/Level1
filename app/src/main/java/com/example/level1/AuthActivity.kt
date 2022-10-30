@@ -10,8 +10,7 @@ import com.example.level1.databinding.ActivityAuthBinding
 import java.util.*
 import java.util.regex.Pattern
 
-
-class AuthActivity : AppCompatActivity() {
+class AuthActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityAuthBinding
     private lateinit var prefs: SharedPreferences
@@ -29,23 +28,21 @@ class AuthActivity : AppCompatActivity() {
 
     private fun fillInSavedData() {
         prefs = getPreferences(MODE_PRIVATE)
-        binding.tietEmail.setText(prefs.getString("email", ""))
-        binding.tietPassword.setText(prefs.getString("password", ""))
+        binding.tietEmail.setText(prefs.getString(Constants.EMAIL, ""))
+        binding.tietPassword.setText(prefs.getString(Constants.PASS, ""))
     }
 
     private fun processRegisterButtonClick() {
         binding.mbRegister.setOnClickListener() {
-
             checkEmail(binding.tietEmail.text.toString())
             checkIfPasswordIsEmpty()
             //Register button won't work if either e-mail or password layouts display errors
             if (noInputErrors()) {
                 processSharedPreferences()
                 val intent = Intent(this@AuthActivity, MainActivity::class.java)
-                intent.putExtra("user_name", parseEmail(binding.tietEmail.text.toString()))
+                intent.putExtra(Constants.USER_NAME, parseEmail(binding.tietEmail.text.toString()))
                 startActivity(intent)
             }
-
         }
     }
 
@@ -65,8 +62,8 @@ class AuthActivity : AppCompatActivity() {
     private fun processSharedPreferences() {
         with(prefs.edit()) {
             if (binding.cbRememberMe.isChecked) {
-                putString("email", binding.tietEmail.text.toString())
-                putString("password", binding.tietPassword.text.toString())
+                putString(Constants.EMAIL, binding.tietEmail.text.toString())
+                putString(Constants.PASS, binding.tietPassword.text.toString())
                 apply()
             } else {
                 clear()

@@ -1,28 +1,23 @@
 package com.example.level1
 
-import android.annotation.SuppressLint
-import android.graphics.Color
 import android.os.Bundle
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import kotlin.random.Random
+import com.example.level1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         //Animation
         overridePendingTransition(com.google.android.material.R.anim.abc_grow_fade_in_from_bottom,
             com.google.android.material.R.anim.abc_shrink_fade_out_from_bottom)
 
         //Displays user name
-        val userName = intent.extras?.getString("user_name")
-        findViewById<TextView>(R.id.tv_name).text = userName
-
-
+        binding.tvName.text = intent.extras?.getString(Constants.USER_NAME)
     }
 }
