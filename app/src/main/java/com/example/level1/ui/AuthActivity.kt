@@ -21,7 +21,7 @@ class AuthActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         binding = ActivityAuthBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        prefs = applicationContext.getSharedPreferences("My pref", MODE_PRIVATE)
+        prefs = applicationContext.getSharedPreferences(Constants.SHARED_PREFS_NAME, MODE_PRIVATE)
 
         fillInSavedData()
         controlPasswordInput()
@@ -41,7 +41,7 @@ class AuthActivity : AppCompatActivity(){
             //Register button won't work if either e-mail or password layouts display errors
             if (noInputErrors()) {
                 processSharedPreferences()
-                val intent = Intent(this@AuthActivity, MainActivity::class.java)
+                val intent = Intent(this@AuthActivity, ProfileActivity::class.java)
                 intent.putExtra(Constants.USER_NAME, Parser.parseEmail(binding.tietEmail.text.toString()))
                 startActivity(intent)
             }

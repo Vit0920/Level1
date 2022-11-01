@@ -26,4 +26,14 @@
     <string name="terms_and_conditions_landscape">Нажимая «Зарегистрироваться», вы соглашаетесь                                                     с Условиями использования</string>
     <string name="hint_e_mail">Эл. почта</string>
     <string name="hint_password">Пароль</string>
+    <string name="tv_contacts">Контакты</string>
+    <string name="title_activity_add_contact">Добавить контакт</string>
+    <string name="tv_add_contact">Добавить контакт</string>
+    <string name="save">СОХРАНИТЬ</string>
+    <string name="date_of_birth">Дата рождения</string>
+    <string name="address">Адрес</string>
+    <string name="phone">Телефон</string>
+    <string name="email">Эл. почта</string>
+    <string name="career">Карьера</string>
+    <string name="name">Имя</string>
 </resources>

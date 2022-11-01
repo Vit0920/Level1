@@ -1,0 +1,24 @@
+package com.example.level1.ui
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.example.level1.databinding.ActivityAddContactBinding
+
+class AddContactActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityAddContactBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityAddContactBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        processBackArrowClick()
+    }
+
+    private fun processBackArrowClick() {
+        binding.ibArrowBackAddContact.setOnClickListener {
+            finish()
+        }
+    }
+}
