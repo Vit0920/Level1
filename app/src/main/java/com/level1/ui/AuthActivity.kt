@@ -10,7 +10,7 @@ import com.example.level1.R
 import com.example.level1.databinding.ActivityAuthBinding
 import com.level1.utils.Constants
 import com.level1.utils.Parser
-import java.util.regex.Pattern
+import com.level1.utils.Validator
 
 class AuthActivity : AppCompatActivity(){
 
@@ -92,18 +92,13 @@ class AuthActivity : AppCompatActivity(){
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 val password = p0.toString()
                 with(binding.tiloPassword) {
-                    if (password.length >= 8) {
-                        val pattern = Pattern.compile("[^a-zA-Z0-9]")
-                        val matcher = pattern.matcher(password)
-                        val containsSpecialChar = matcher.find()
-                        if (containsSpecialChar) {
+                    when (Validator.validatePassword(password)){
+                        Constants.STRONG_PASS -> {
                             helperText = getString(R.string.pass_helperText_stongPass)
                             error = ""
-                        } else {
-                            error = getString(R.string.pass_error_weak)
                         }
-                    } else {
-                        error = getString(R.string.pass_error_short)
+                        Constants.WEAK_PASS -> error = getString(R.string.pass_error_weak)
+                        Constants.SHORT_PASS -> error = getString(R.string.pass_error_short)
                     }
                 }
             }
@@ -111,5 +106,4 @@ class AuthActivity : AppCompatActivity(){
             }
         })
     }
-
 }
