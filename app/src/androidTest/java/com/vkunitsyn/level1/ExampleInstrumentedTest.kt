@@ -1,4 +1,4 @@
-package com.example.level1
+package com.vkunitsyn.level1
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

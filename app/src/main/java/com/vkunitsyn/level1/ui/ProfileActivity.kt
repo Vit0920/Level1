@@ -1,10 +1,10 @@
-package com.level1.ui
+package com.vkunitsyn.level1.ui
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.level1.databinding.ActivityProfileBinding
-import com.level1.utils.Constants
+import com.vkunitsyn.level1.utils.Constants
 
 class ProfileActivity : AppCompatActivity() {
 

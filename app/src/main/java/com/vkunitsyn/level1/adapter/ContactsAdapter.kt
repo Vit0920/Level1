@@ -1,11 +1,11 @@
-package com.level1.adapter
+package com.vkunitsyn.level1.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.level1.R
-import com.level1.model.ContactModel
+import com.vkunitsyn.level1.model.ContactModel
 
 class  ContactsAdapter : RecyclerView.Adapter<ContactsAdapter.MyViewHolder>() {
 

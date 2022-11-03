@@ -1,4 +1,4 @@
-package com.example.level1
+package com.vkunitsyn.level1
 
 import org.junit.Test
 

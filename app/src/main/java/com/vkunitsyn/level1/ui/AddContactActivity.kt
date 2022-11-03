@@ -1,4 +1,4 @@
-package com.level1.ui
+package com.vkunitsyn.level1.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

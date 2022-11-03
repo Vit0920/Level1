@@ -1,4 +1,4 @@
-package com.level1.utils
+package com.vkunitsyn.level1.utils
 
 import java.util.*
 

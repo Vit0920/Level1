@@ -1,10 +1,10 @@
-package com.level1.ui
+package com.vkunitsyn.level1.ui
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.level1.adapter.ContactsAdapter
+import com.vkunitsyn.level1.adapter.ContactsAdapter
 import com.example.level1.databinding.ActivityContactsBinding
 
 class ContactsActivity: AppCompatActivity() {
