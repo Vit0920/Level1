@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.level1.R
+import com.vkunitsyn.level1.R
 import com.vkunitsyn.level1.model.ContactModel
 
 class  ContactsAdapter : RecyclerView.Adapter<ContactsAdapter.MyViewHolder>() {

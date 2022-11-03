@@ -1,8 +1,8 @@
 package com.vkunitsyn.level1.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.level1.databinding.ActivityAddContactBinding
+import androidx.appcompat.app.AppCompatActivity
+import com.vkunitsyn.level1.databinding.ActivityAddContactBinding
 
 class AddContactActivity : AppCompatActivity() {
 

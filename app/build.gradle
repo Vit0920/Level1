@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.level1'
+    namespace 'com.vkunitsyn.level1'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.level1"
+        applicationId "com.vkunitsyn.level1"
         minSdk 21
         targetSdk 33
         versionCode 1

@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.vkunitsyn.level1.adapter.ContactsAdapter
-import com.example.level1.databinding.ActivityContactsBinding
+import com.vkunitsyn.level1.databinding.ActivityContactsBinding
 
 class ContactsActivity: AppCompatActivity() {
     private lateinit var binding: ActivityContactsBinding
