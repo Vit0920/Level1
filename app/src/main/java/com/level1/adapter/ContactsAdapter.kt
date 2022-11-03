@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.level1.R
 import com.level1.model.ContactModel
-import kotlinx.android.synthetic.main.contact_model_layout.view.*
 
 class  ContactsAdapter : RecyclerView.Adapter<ContactsAdapter.MyViewHolder>() {
 
@@ -20,8 +19,7 @@ class  ContactsAdapter : RecyclerView.Adapter<ContactsAdapter.MyViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.itemView.tv_model_user_name.text = contactsList[position].name
-        holder.itemView.tv_user_model_career.text = contactsList[position].career
+
     }
 
     override fun getItemCount(): Int {
