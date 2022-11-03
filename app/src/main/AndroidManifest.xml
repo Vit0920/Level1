@@ -29,7 +29,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.AuthActivity"
+            android:name="com.level1.ui.AuthActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,21 +42,21 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.ProfileActivity"
+            android:name="com.level1.ui.ProfileActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.ContactsActivity"
+            android:name="com.level1.ui.ContactsActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.AddContactActivity"
+            android:name="com.level1.ui.AddContactActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"

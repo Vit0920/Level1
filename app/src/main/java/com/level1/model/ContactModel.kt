@@ -1,4 +1,4 @@
-package com.example.level1.model
+package com.level1.model
 
 import android.media.Image
 

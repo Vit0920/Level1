@@ -1,4 +1,4 @@
-package com.example.level1.ui
+package com.level1.ui
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -8,8 +8,8 @@ import android.text.TextWatcher
 import androidx.appcompat.app.AppCompatActivity
 import com.example.level1.R
 import com.example.level1.databinding.ActivityAuthBinding
-import com.example.level1.utils.Constants
-import com.example.level1.utils.Parser
+import com.level1.utils.Constants
+import com.level1.utils.Parser
 import java.util.regex.Pattern
 
 class AuthActivity : AppCompatActivity(){

@@ -1,4 +1,4 @@
-package com.example.level1.utils
+package com.level1.utils
 
 import java.util.*
 
