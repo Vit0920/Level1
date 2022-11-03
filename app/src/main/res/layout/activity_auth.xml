@@ -42,6 +42,7 @@
         app:hintTextColor="?attr/colorOnPrimary"
         android:textColorHint="?attr/colorOnPrimary"
         app:expandedHintEnabled="false"
+        android:layout_marginHorizontal="@dimen/margin_normal"
         app:helperTextTextColor="?attr/colorOnPrimary"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="@dimen/margin_large"
@@ -51,10 +52,10 @@
             android:id="@+id/tiet_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/margin_normal"
             android:backgroundTint="?attr/colorPrimaryVariant"
             android:inputType="textEmailAddress"
             android:singleLine="true"
+            android:paddingTop="@dimen/tito_padding_top"
             android:textColor="?attr/colorOnPrimary"
             android:textSize="@dimen/text_large" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -69,6 +70,7 @@
         app:endIconTint="?attr/colorOnPrimary"
         app:errorEnabled="true"
         app:expandedHintEnabled="false"
+        android:layout_marginHorizontal="@dimen/margin_normal"
         android:hint="@string/hint_password"
         app:hintTextColor="?attr/colorOnPrimary"
         android:textColorHint="?attr/colorOnPrimary"
@@ -80,9 +82,9 @@
             android:id="@+id/tiet_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/margin_normal"
             android:backgroundTint="?attr/colorPrimaryVariant"
             android:inputType="textPassword"
+            android:paddingTop="@dimen/tito_padding_top"
             android:singleLine="true"
             android:textColor="?attr/colorOnPrimary"
             android:textSize="@dimen/text_large" />

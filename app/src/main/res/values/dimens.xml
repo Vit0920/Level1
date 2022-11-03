@@ -13,4 +13,6 @@
     <dimen name="stroke_width_normal">2dp</dimen>
     <dimen name="stroke_width_small">1dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="tito_padding_top">35dp</dimen>
 </resources>
